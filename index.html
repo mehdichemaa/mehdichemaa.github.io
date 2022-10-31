@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./src/index.js" defer></script>
+
+    <title>Mehdi Chemaa's Portfolio</title>
+  </head>
+  <body>
+    <header class="bg-black text-white pb-24 overflow-hidden">
+      <div class="container mx-auto flex items-center px-5 tablet:px-0 py-5">
+        <h1 class="text-3xl font-bold underline flex-1">Mehdi Chemaa</h1>
+        <nav class="hidden laptop:block">
+          <ul class="flex">
+            <li class=""><a href="#about">About</a></li>
+            <li class="ml-6"><a href="#background">Background</a></li>
+            <li class="ml-6"><a href="#porfolio">Porfolio</a></li>
+            <li class="ml-6"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a
+          class="hidden laptop:block ml-10 px-4 py-2 rounded-md bg-yellow-400 text-black"
+          href="#"
+          >Resume</a
+        >
+      </div>
+      <div class="tablet:w-[60%] laptop:w-[50%] desktop:w-[50%] mx-auto pt-16">
+        <div class="px-10 tablet:px-16 laptop:px-24 desktop:px-40">
+          <img src="./assets/img/portrait.jpg" alt="Portait" class="h-1/2" />
+        </div>
+        <div class="pt-10 px-5 tablet:px-0">
+          <p class="text-teal-600">Hi! My name is Mehdi.</p>
+          <h1 class="text-white text-4xl desktop:text-6xl font-semibold mt-2">
+            Full Stack Software Engineer
+          </h1>
+          <p class="mt-4">
+            I'm a motivated software engineering graduate from the University of
+            Economics and Human Sciences in Warsaw with a
+            <span class="text-blue-500 font-semibold">3 years experience</span>
+            in freelance web development. I'm seeking to use my skills in
+            <span class="text-yellow-400 font-semibold">JavaScript</span> and
+            project management to meet business needs.
+          </p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="relative h-[100vh]">
+        <div class="absolute top-0 left-0 w-full h-full z-1">
+          <video
+            class="w-full h-full object-cover"
+            src="./assets/video/video.mp4"
+            type="video/mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
+        <div
+          class="bg-black opacity-30 absolute top-0 left-0 w-full h-full"
+        ></div>
+        <div class="absolute top-1/2 -translate-y-[50%] left-0 w-full z-2">
+          <div
+            class="container mx-auto px-5 tablet:px-0 text-white grid tablet:grid-cols-2"
+          >
+            <div>
+              <h2 class="text-6xl font-semibold">Education</h2>
+              <ul class="mt-5">
+                <li>2019 - 2023</li>
+                <li>B.Sc. in Software Engineering</li>
+                <li>University of Economics and Human Sciences in Warsaw</li>
+              </ul>
+            </div>
+            <div class="mt-5 tablet:mt-0">
+              <h2 class="text-6xl font-semibold">Experience</h2>
+              <ul class="mt-5">
+                <li>Freelance Full Stack Web Developer</li>
+                <li>Medas Textile Sp. z o.o</li>
+                <li>Jan 2020 - Present</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

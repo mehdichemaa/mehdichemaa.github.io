@@ -10,23 +10,71 @@
     <title>Mehdi Chemaa's Portfolio</title>
   </head>
   <body>
-    <header class="bg-black text-white pb-20 overflow-hidden">
-      <div class="container mx-auto flex items-center px-5 tablet:px-0 py-5">
+    <header
+      id="about"
+      class="bg-gradient-to-br from-black-dark to-black-light text-white pb-20 overflow-hidden"
+    >
+      <div
+        class="relative container mx-auto flex items-center px-5 tablet:px-0 py-5"
+      >
         <h1 class="text-3xl font-bold flex-1">Mehdi Chemaa</h1>
         <nav class="hidden laptop:block">
           <ul class="flex">
-            <li class=""><a href="#about">About</a></li>
-            <li class="ml-6"><a href="#background">Background</a></li>
-            <li class="ml-6"><a href="#porfolio">Porfolio</a></li>
-            <li class="ml-6"><a href="#contact">Contact</a></li>
+            <li class="transition-all hover:text-yellow-dark">
+              <a href="#about">About</a>
+            </li>
+            <li class="ml-6 transition-all hover:text-yellow-dark">
+              <a href="#background">Background</a>
+            </li>
+            <li class="ml-6 transition-all hover:text-yellow-dark">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="ml-6 transition-all hover:text-yellow-dark">
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         </nav>
-        <a
-          class="hidden laptop:block ml-10 px-4 py-2 rounded-md bg-yellow-500 text-[#0d0e0e]"
-          href="#"
-          >Resume</a
+        <button id="menuToggle" class="block laptop:hidden">
+          <svg
+            id="iconMenu"
+            class="w-10 h-10 fill-white transition-all hover:fill-yellow-dark"
+          >
+            <use xlink:href="./assets/svg/sprite.svg#menu"></use>
+          </svg>
+          <svg
+            id="iconCross"
+            class="w-10 h-10 fill-white transition-all hover:fill-yellow-dark hidden"
+          >
+            <use xlink:href="./assets/svg/sprite.svg#cross"></use>
+          </svg>
+        </button>
+        <nav
+          id="mobileMenu"
+          class="absolute right-5 tablet:right-0 top-[100%] p-5 rounded-lg bg-yellow-dark hidden"
+        >
+          <ul class="flex flex-col text-black-dark">
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#background">Background</a>
+            </li>
+            <li>
+              <a href="#porfolio">Porfolio</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="hidden laptop:flex items-center ml-10 btn-main" href="#">
+          <svg class="w-5 h-5 fill-black-dark">
+            <use xlink:href="./assets/svg/sprite.svg#github"></use>
+          </svg>
+          &nbsp; Source</a
         >
       </div>
+      <!-- ABOUT -->
       <div class="tablet:w-[60%] laptop:w-[50%] desktop:w-[50%] mx-auto pt-5">
         <div class="px-10 tablet:px-16 laptop:px-24 desktop:px-40">
           <img src="./assets/img/portrait.jpg" alt="Portait" class="h-1/2" />
@@ -48,7 +96,8 @@
       </div>
     </header>
     <main>
-      <section class="relative h-[100vh]">
+      <!-- BACKGROUND -->
+      <section id="background" class="relative h-[100vh]">
         <div class="absolute top-0 left-0 w-full h-full z-1">
           <video
             class="w-full h-full object-cover"
@@ -70,7 +119,7 @@
               <h2 class="text-6xl font-semibold">Education</h2>
               <ul class="mt-5">
                 <li class="text-sm">2019 • 2023</li>
-                <li class="font-semibold text-yellow-500">
+                <li class="font-semibold text-yellow-dark">
                   B.Cs. in Software Engineering
                 </li>
                 <li class="font-semibold">
@@ -82,21 +131,21 @@
               <h2 class="text-6xl font-semibold">Experience</h2>
               <ul class="mt-5">
                 <li class="text-sm">Jan 2020 • Present</li>
-                <li class="font-semibold text-yellow-500">
+                <li class="font-semibold text-yellow-dark">
                   Full Stack Web Developer
                 </li>
                 <li class="font-semibold">Medas Textile Sp. z o.o</li>
               </ul>
               <ul class="mt-5">
                 <li class="text-sm">Sep 2019 • Present</li>
-                <li class="font-semibold text-yellow-500">
+                <li class="font-semibold text-yellow-dark">
                   Full Stack Web Developer
                 </li>
                 <li class="font-semibold">Fizjomer Rehabilitation</li>
               </ul>
               <ul class="mt-5">
                 <li class="text-sm">Sep 2018 • Mar 2019</li>
-                <li class="font-semibold text-yellow-500">
+                <li class="font-semibold text-yellow-dark">
                   WordPress Editor & Graphic Designer
                 </li>
                 <li class="font-semibold">Vistula University</li>
@@ -106,7 +155,7 @@
         </div>
       </section>
       <!-- PORTFOLIO -->
-      <section class="py-20">
+      <section id="portfolio" class="py-20">
         <div class="container mx-auto">
           <h2 class="text-6xl font-semibold text-center">Portfolio</h2>
           <div class="mt-16 flex justify-center">
@@ -126,25 +175,25 @@
                   <ul class="flex justify-between">
                     <li>
                       <span
-                        class="mt-2 inline-block bg-gray-200 text-[#0d0e0e] px-2 rounded-xl text-sm"
+                        class="mt-2 inline-block bg-gray text-black-dark px-2 rounded-xl text-sm"
                         >WordPress</span
                       >
                     </li>
                     <li>
                       <span
-                        class="mt-2 inline-block bg-gray-200 text-[#0d0e0e] px-2 rounded-xl text-sm"
+                        class="mt-2 inline-block bg-gray text-black-dark px-2 rounded-xl text-sm"
                         >WooCommerce</span
                       >
                     </li>
                     <li>
                       <span
-                        class="mt-2 inline-block bg-gray-200 text-[#0d0e0e] px-2 rounded-xl text-sm"
+                        class="mt-2 inline-block bg-gray text-black-dark px-2 rounded-xl text-sm"
                         >PHP</span
                       >
                     </li>
                     <li>
                       <span
-                        class="mt-2 inline-block bg-gray-200 text-[#0d0e0e] px-2 rounded-xl text-sm"
+                        class="mt-2 inline-block bg-gray text-black-dark px-2 rounded-xl text-sm"
                         >MySQL</span
                       >
                     </li>
@@ -154,24 +203,18 @@
                     using WooCommerce.
                   </p>
                 </div>
-                <div class="mt-2 text-[#0d0e0e] flex">
+                <div class="mt-2 text-black-dark flex">
                   <div>
-                    <a
-                      class="flex items-center bg-yellow-500 px-4 py-2 rounded-lg"
-                      href="#"
-                    >
-                      <svg class="w-5 h-5 fill-[#0d0e0e]">
+                    <a class="flex items-center btn-main" href="#">
+                      <svg class="w-5 h-5 fill-black-dark">
                         <use xlink:href="./assets/svg/sprite.svg#eye"></use>
                       </svg>
                       &nbsp; Preview</a
                     >
                   </div>
                   <div>
-                    <a
-                      class="flex items-center ml-2 bg-yellow-500 px-4 py-2 rounded-lg"
-                      href="#"
-                    >
-                      <svg class="w-5 h-5 fill-[#0d0e0e]">
+                    <a class="flex items-center ml-2 btn-main" href="#">
+                      <svg class="w-5 h-5 fill-black-dark">
                         <use xlink:href="./assets/svg/sprite.svg#github"></use>
                       </svg>
                       &nbsp; Github Repo</a
@@ -184,30 +227,37 @@
         </div>
       </section>
       <!-- GET IN TOUCH -->
-      <footer class="pt-20 pb-5 bg-[#0d0e0e] text-white">
+      <footer id="contact" class="pt-24 pb-10 bg-black-dark text-white">
         <div class="tablet:w-[25%] mx-auto text-center">
-          <h2 class="text-4xl font-semibold">Contact</h2>
-          <h3 class="mt-10 text-2xl font-semibold">Let's Talk</h3>
-          <a class="mt-2" href="#">hello@mehdichemaa.com</a>
+          <h3 class="text-2xl font-semibold">Let's Talk</h3>
+          <a class="mt-2 transition-all hover:text-yellow-dark" href="#"
+            >hello@mehdichemaa.com</a
+          >
           <h3 class="mt-5 text-2xl font-semibold">Let's Connect</h3>
           <div class="mt-2 flex justify-center">
             <a href="#">
-              <svg class="w-5 h-5 fill-white">
+              <svg
+                class="w-5 h-5 fill-white transition-all hover:fill-yellow-dark"
+              >
                 <use xlink:href="./assets/svg/sprite.svg#linkedin"></use>
               </svg>
             </a>
             <a class="ml-2" href="#">
-              <svg class="w-5 h-5 fill-white">
+              <svg
+                class="w-5 h-5 fill-white transition-all hover:fill-yellow-dark"
+              >
                 <use xlink:href="./assets/svg/sprite.svg#github"></use>
               </svg>
             </a>
           </div>
         </div>
         <div
-          class="mt-10 flex justify-between items-center px-4 py-2 rounded-sm bg-[#212223] w-[95%] mx-auto"
+          class="mt-20 flex justify-between items-center px-4 py-2 rounded-sm w-[95%] mx-auto border-b-2 border-white"
         >
           <h1 class="text-3xl font-bold flex-1">Mehdi Chemaa</h1>
-          <p>Website</p>
+          <a class="transition-all hover:text-yellow-dark" href="#about"
+            >Back to top &#8593;</a
+          >
         </div>
       </footer>
     </main>

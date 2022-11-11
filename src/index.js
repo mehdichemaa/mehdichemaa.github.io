@@ -120,7 +120,7 @@ fetch('../data/portfolio.json')
             <div>
               ${
                 project.hasOwnProperty('preview')
-                  ? `<a class="flex items-center btn-main" href="${project.preview}">
+                  ? `<a class="flex items-center btn-main" href="${project.preview}" target="_blank">
                       <svg class="w-5 h-5 fill-black-dark">
                         <use xlink:href="./assets/svg/sprite.svg#eye"></use>
                       </svg>

@@ -886,12 +886,12 @@ video {
   height: 1.25rem;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
-}
-
 .h-auto {
   height: auto;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
 }
 
 .w-full {

@@ -669,14 +669,6 @@ video {
   left: -0.25rem;
 }
 
-.right-5 {
-  right: 1.25rem;
-}
-
-.top-\[100\%\] {
-  top: 100%;
-}
-
 .top-0 {
   top: 0px;
 }
@@ -685,20 +677,16 @@ video {
   left: 0px;
 }
 
-.top-1\/2 {
-  top: 50%;
-}
-
 .right-0 {
   right: 0px;
 }
 
-.top-10 {
-  top: 2.5rem;
-}
-
 .top-20 {
   top: 5rem;
+}
+
+.top-1\/2 {
+  top: 50%;
 }
 
 .isolate {
@@ -707,6 +695,10 @@ video {
 
 .isolation-auto {
   isolation: auto;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .z-10 {
@@ -719,14 +711,6 @@ video {
 
 .z-30 {
   z-index: 30;
-}
-
-.z-50 {
-  z-index: 50;
-}
-
-.z-40 {
-  z-index: 40;
 }
 
 .float-right {
@@ -894,20 +878,24 @@ video {
   height: 2.5rem;
 }
 
-.h-5 {
-  height: 1.25rem;
+.h-full {
+  height: 100%;
 }
 
-.h-1\/2 {
-  height: 50%;
+.h-5 {
+  height: 1.25rem;
 }
 
 .h-\[100vh\] {
   height: 100vh;
 }
 
-.h-full {
-  height: 100%;
+.h-auto {
+  height: auto;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-10 {
@@ -916,10 +904,6 @@ video {
 
 .w-5 {
   width: 1.25rem;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .w-80 {
@@ -1832,14 +1816,14 @@ video {
   background-color: rgb(249 208 41 / var(--tw-bg-opacity));
 }
 
-.bg-gray {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 240 240 / var(--tw-bg-opacity));
-}
-
 .bg-black-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(13 14 14 / var(--tw-bg-opacity));
+}
+
+.bg-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 240 240 / var(--tw-bg-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -2018,12 +2002,12 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.pb-20 {
-  padding-bottom: 5rem;
+.pt-28 {
+  padding-top: 7rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .pt-10 {
@@ -2040,14 +2024,6 @@ video {
 
 .pb-10 {
   padding-bottom: 2.5rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-28 {
-  padding-top: 7rem;
 }
 
 .text-left {
@@ -2275,10 +2251,6 @@ video {
 .subpixel-antialiased {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
-}
-
-.opacity-90 {
-  opacity: 0.9;
 }
 
 .opacity-50 {
@@ -2600,10 +2572,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .tablet\:right-0 {
-    right: 0px;
-  }
-
   .tablet\:mt-0 {
     margin-top: 0px;
   }

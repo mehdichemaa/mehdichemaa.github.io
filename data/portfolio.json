@@ -1,0 +1,17 @@
+[
+  {
+    "thumbnail": "./assets/img/medastex.png",
+    "title": "Medas Textile",
+    "stack": [
+      "HTML",
+      "Tialwindcss",
+      "JavaScript",
+      "PHP",
+      "MySQL",
+      "Wordpress",
+      "WooCommerce"
+    ],
+    "description": "A custom WordPress site to showcase the company's products using WooCommerce.",
+    "preview": "https://medastex.pl/"
+  }
+]

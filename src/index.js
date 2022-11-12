@@ -122,7 +122,7 @@ fetch('../data/portfolio.json')
                 project.hasOwnProperty('preview')
                   ? `<a class="flex items-center btn-main" href="${project.preview}" target="_blank">
                       <svg class="w-5 h-5 fill-black-dark">
-                        <use xlink:href="./assets/svg/sprite.svg#eye"></use>
+                        <use xlink:href="./assets/img/sprite.svg#eye"></use>
                       </svg>
                       &nbsp; Preview
                     </a>`
@@ -134,7 +134,7 @@ fetch('../data/portfolio.json')
                 project.hasOwnProperty('repo')
                   ? `<a class="flex items-center ml-2 btn-main" href="${project.repo}" target="_blank">
                       <svg class="w-5 h-5 fill-black-dark">
-                        <use xlink:href="./assets/svg/sprite.svg#github"></use>
+                        <use xlink:href="./assets/img/sprite.svg#github"></use>
                       </svg>
                       &nbsp; Github Repo
                     </a>`

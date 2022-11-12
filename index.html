@@ -4,6 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1NC6MM1S6D"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-1NC6MM1S6D');
+    </script>
+
     <link rel="stylesheet" href="./style.css" />
     <script src="./src/index.js" defer></script>
 
@@ -38,13 +53,13 @@
               id="iconMenu"
               class="w-10 h-10 fill-white transition-all hover:fill-yellow-dark"
             >
-              <use xlink:href="./assets/svg/sprite.svg#menu"></use>
+              <use xlink:href="./assets/img/sprite.svg#menu"></use>
             </svg>
             <svg
               id="iconCross"
               class="w-10 h-10 fill-white transition-all hover:fill-yellow-dark hidden"
             >
-              <use xlink:href="./assets/svg/sprite.svg#cross"></use>
+              <use xlink:href="./assets/img/sprite.svg#cross"></use>
             </svg>
           </button>
           <nav
@@ -72,7 +87,7 @@
             target="_blank"
           >
             <svg class="w-5 h-5 fill-black-dark">
-              <use xlink:href="./assets/svg/sprite.svg#github"></use>
+              <use xlink:href="./assets/img/sprite.svg#github"></use>
             </svg>
             &nbsp; Source
           </a>
@@ -226,7 +241,7 @@
                   <div>
                     <a class="flex items-center btn-main" href="#">
                       <svg class="w-5 h-5 fill-black-dark">
-                        <use xlink:href="./assets/svg/sprite.svg#eye"></use>
+                        <use xlink:href="./assets/img/sprite.svg#eye"></use>
                       </svg>
                       &nbsp; Preview
                     </a>
@@ -234,7 +249,7 @@
                   <div>
                     <a class="flex items-center ml-2 btn-main" href="#">
                       <svg class="w-5 h-5 fill-black-dark">
-                        <use xlink:href="./assets/svg/sprite.svg#github"></use>
+                        <use xlink:href="./assets/img/sprite.svg#github"></use>
                       </svg>
                       &nbsp; Github Repo
                     </a>
@@ -260,7 +275,7 @@
               <svg
                 class="w-5 h-5 fill-white transition-all hover:fill-yellow-dark"
               >
-                <use xlink:href="./assets/svg/sprite.svg#linkedin"></use>
+                <use xlink:href="./assets/img/sprite.svg#linkedin"></use>
               </svg>
             </a>
             <a
@@ -271,7 +286,7 @@
               <svg
                 class="w-5 h-5 fill-white transition-all hover:fill-yellow-dark"
               >
-                <use xlink:href="./assets/svg/sprite.svg#github"></use>
+                <use xlink:href="./assets/img/sprite.svg#github"></use>
               </svg>
             </a>
           </div>
